@@ -1,5 +1,3 @@
-
-
 import streamlit as st
 st.title("feelings developed radar")
 gender = st.radio("are you a boy or a girl"("boy"),("girl"))
