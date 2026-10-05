@@ -1,14 +1,15 @@
-import streamlit as st 
+import streamlit as st
+
 st.title("feelings developed radar")
-gender = st.radio("are you a boy or a girl"("boy"),("girl"))
-status = st.selectbox("what do you feel now ?"("glad","sad","cold"))
-if st.bottun("descover yourself !"):
-  if status == "glad":
-    st.fireworks()
-    st.success("what a greet day !")
 
-  elif status == "sad":
-    st.info("donnot be sad , tommorw will be better")
+gender = st.radio("are you a boy or a girl", ["boy", "girl"])
+status = st.selectbox("what do you feel now ?", ["glad", "sad", "cold"])
 
-  elif status =="cold":
-    st.snow()
+if st.button("discover yourself !"):
+    if status == "glad":
+        st.fireworks()
+        st.success("what a great day !")
+    elif status == "sad":
+        st.info("don't be sad, tomorrow will be better")
+    elif status == "cold":
+        st.snow()
