@@ -10,7 +10,7 @@ if st.bottun("descover yourself !"):
     st.success("what a greet day !")
 
   elif status == "sad":
-  st.info("donnot be sad , tommorw will be better")
+    st.info("donnot be sad , tommorw will be better")
 
   elif status =="cold":
     st.snow()
