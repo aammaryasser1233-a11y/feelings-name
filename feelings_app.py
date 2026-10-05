@@ -7,7 +7,7 @@ status = st.selectbox("what do you feel now ?", ["glad", "sad", "cold"])
 
 if st.button("discover yourself !"):
     if status == "glad":
-        st.fireworks()
+        st.balloons()
         st.success("what a great day !")
     elif status == "sad":
         st.info("don't be sad, tomorrow will be better")
